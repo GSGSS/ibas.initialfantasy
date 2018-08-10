@@ -1,4 +1,4 @@
-package org.colorcoding.ibas.initialfantasy.test.bo;
+package org.colorcoding.ibas.initialfantasy.test;
 
 import org.colorcoding.ibas.bobas.common.Criteria;
 import org.colorcoding.ibas.bobas.common.ICondition;
@@ -16,7 +16,7 @@ import org.colorcoding.ibas.initialfantasy.repository.BORepositoryInitialFantasy
 
 import junit.framework.TestCase;
 
-public class testRepository extends TestCase {
+public class TestRepository extends TestCase {
 
 	public void testBOSeriesKey() throws Exception {
 		// 测试模板
