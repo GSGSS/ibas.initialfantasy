@@ -17,7 +17,6 @@ import org.colorcoding.ibas.initialfantasy.bo.bofiltering.BOFiltering;
 import org.colorcoding.ibas.initialfantasy.bo.organization.Organization;
 import org.colorcoding.ibas.initialfantasy.bo.organization.User;
 import org.colorcoding.ibas.initialfantasy.bo.privilege.Privilege;
-import org.colorcoding.ibas.initialfantasy.bo.project.Project;
 import org.colorcoding.ibas.initialfantasy.bo.shell.BOInfo;
 import org.colorcoding.ibas.initialfantasy.bo.shell.UserModule;
 import org.colorcoding.ibas.initialfantasy.bo.shell.UserPrivilege;
@@ -34,10 +33,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-应用程序配置
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -49,10 +46,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-应用程序配置
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -63,43 +58,10 @@ public class DataService extends BORepositoryInitialFantasyShell {
 
 	// --------------------------------------------------------------------------------------------//
 	/**
-	 * 查询-项目
-	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
-	 * @return 操作结果
-	 */
-	@WebMethod
-	public OperationResult<Project> fetchProject(@WebParam(name = "criteria") Criteria criteria,
-			@WebParam(name = "token") String token) {
-		return super.fetchProject(criteria, token);
-	}
-
-	/**
-	 * 保存-项目
-	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
-	 * @return 操作结果
-	 */
-	@WebMethod
-	public OperationResult<Project> saveProject(@WebParam(name = "bo") Project bo,
-			@WebParam(name = "token") String token) {
-		return super.saveProject(bo, token);
-	}
-
-	// --------------------------------------------------------------------------------------------//
-	/**
 	 * 查询-组织
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -111,10 +73,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-组织
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -127,8 +87,7 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 用户口令登录
 	 * 
-	 * @param token
-	 *            用户口令
+	 * @param token 用户口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -140,10 +99,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 用户登录
 	 * 
-	 * @param user
-	 *            用户
-	 * @param passwrod
-	 *            密码
+	 * @param user     用户
+	 * @param passwrod 密码
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -155,12 +112,9 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询用户模块
 	 * 
-	 * @param user
-	 *            用户
-	 * @param platform
-	 *            平台
-	 * @param token
-	 *            用户口令
+	 * @param user     用户
+	 * @param platform 平台
+	 * @param token    用户口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -172,12 +126,9 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询用户权限
 	 * 
-	 * @param user
-	 *            用户
-	 * @param platform
-	 *            平台
-	 * @param token
-	 *            用户口令
+	 * @param user     用户
+	 * @param platform 平台
+	 * @param token    用户口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -189,12 +140,9 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询用户查询
 	 * 
-	 * @param user
-	 *            用户
-	 * @param queryId
-	 *            查询标识
-	 * @param token
-	 *            用户口令
+	 * @param user    用户
+	 * @param queryId 查询标识
+	 * @param token   用户口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -206,10 +154,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询用户查询
 	 * 
-	 * @param query
-	 *            查询
-	 * @param token
-	 *            用户口令
+	 * @param query 查询
+	 * @param token 用户口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -221,10 +167,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询业务对象信息
 	 * 
-	 * @param boName
-	 *            对象名称
-	 * @param token
-	 *            用户口令
+	 * @param boName 对象名称
+	 * @param token  用户口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -237,10 +181,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-应用程序元素
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -252,10 +194,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-应用程序元素
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -268,10 +208,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-应用程序模块
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -283,10 +221,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-应用程序模块
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -299,10 +235,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-应用程序平台
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -314,10 +248,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-应用程序平台
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -330,10 +262,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-业务对象检索条件
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -345,10 +275,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-业务对象检索条件
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -361,10 +289,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-业务对象筛选
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -376,10 +302,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-业务对象筛选
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -392,10 +316,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-系统权限
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -407,10 +329,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-系统权限
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -423,10 +343,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 查询-用户
 	 * 
-	 * @param criteria
-	 *            查询
-	 * @param token
-	 *            口令
+	 * @param criteria 查询
+	 * @param token    口令
 	 * @return 操作结果
 	 */
 	@WebMethod
@@ -438,10 +356,8 @@ public class DataService extends BORepositoryInitialFantasyShell {
 	/**
 	 * 保存-用户
 	 * 
-	 * @param bo
-	 *            对象实例
-	 * @param token
-	 *            口令
+	 * @param bo    对象实例
+	 * @param token 口令
 	 * @return 操作结果
 	 */
 	@WebMethod

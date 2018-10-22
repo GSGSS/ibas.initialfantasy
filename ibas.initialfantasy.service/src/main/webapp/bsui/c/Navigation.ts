@@ -19,7 +19,6 @@
 /// <reference path="./user/index.ts" />
 /// <reference path="./boinformation/index.ts" />
 /// <reference path="./system/index.ts" />
-/// <reference path="./project/index.ts" />
 /// <reference path="./bonumbering/index.ts" />
 namespace initialfantasy {
     export namespace ui {
@@ -135,15 +134,6 @@ namespace initialfantasy {
                         break;
                     case app.CriteriaEditorService.APPLICATION_ID:
                         view = new c.CriteriaEditorView();
-                        break;
-                    case app.ProjectListApp.APPLICATION_ID:
-                        view = new c.ProjectListView();
-                        break;
-                    case app.ProjectChooseApp.APPLICATION_ID:
-                        view = new c.ProjectChooseView();
-                        break;
-                    case app.ProjectEditApp.APPLICATION_ID:
-                        view = new c.ProjectEditView();
                         break;
                     case app.BONumberingListApp.APPLICATION_ID:
                         view = new c.BONumberingListView();

@@ -208,21 +208,6 @@ namespace initialfantasy {
             saveBOSeriesNumbering(saver: ibas.ISaveCaller<bo.BOSeriesNumbering>): void {
                 super.save(bo.BOSeriesNumbering.name, saver);
             }
-
-            /**
-             * 查询 项目
-             * @param fetcher 查询者
-             */
-            fetchProject(fetcher: ibas.IFetchCaller<bo.Project>): void {
-                super.fetch(bo.Project.name, fetcher);
-            }
-            /**
-             * 保存 项目
-             * @param saver 保存者
-             */
-            saveProject(saver: ibas.ISaveCaller<bo.Project>): void {
-                super.save(bo.Project.name, saver);
-            }
         }
     }
 }
